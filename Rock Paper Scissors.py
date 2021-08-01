@@ -41,6 +41,12 @@ def playGame():
             print("You lose!")
         if x == actions[2]:
             print("This game was a draw.")
-
+                        
+    keepPlaying = input("Would you like to play again? (Y/N)").upper()
+    
+    if keepPlaying == "Y":
+        playGame()
+    else:
+        pass
 
 playGame()
